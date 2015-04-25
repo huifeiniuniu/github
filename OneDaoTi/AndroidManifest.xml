@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="preferExternal"
+    package="com.firstpeople"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="一道题"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.firstpeople.activity.LoadingActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.SetUpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.OldExamActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.PaperActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.QuickActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.SmartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.SpecialActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.CollectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.MyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.SubjectChoiceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.firstpeople.activity.DownloadActivity"
+            android:screenOrientation="portrait" >
+        </activity>        
+    </application>
+
+</manifest>
